@@ -24,7 +24,7 @@ const PortfolioTable = () => {
 
   useEffect(() => {
     fetchPortfolio();
-    const interval = setInterval(fetchPortfolio, 5000);
+    const interval = setInterval(fetchPortfolio, 1000);
     return () => clearInterval(interval);
   }, []);
 
